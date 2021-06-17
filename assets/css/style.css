@@ -1,0 +1,57 @@
+.text-honey {
+  color: #E8D274 !important;
+}
+
+.text-fire {
+  color: #F79714 !important;
+}
+
+.text-palehoney {
+  color: #CBB58A !important;
+}
+
+.text-wood {
+  color: #A97554 !important;
+}
+
+.bg-honey {
+  background-color: #E8D274 !important;
+}
+
+a.bg-honey:hover, a.bg-honey:focus,
+button.bg-honey:hover,
+button.bg-honey:focus {
+  background-color: #e1c448 !important;
+}
+
+.bg-fire {
+  background-color: #F79714 !important;
+}
+
+a.bg-fire:hover, a.bg-fire:focus,
+button.bg-fire:hover,
+button.bg-fire:focus {
+  background-color: #d17c07 !important;
+}
+
+.bg-palehoney {
+  background-color: #CBB58A !important;
+}
+
+a.bg-palehoney:hover, a.bg-palehoney:focus,
+button.bg-palehoney:hover,
+button.bg-palehoney:focus {
+  background-color: #bb9f67 !important;
+}
+
+.bg-wood {
+  background-color: #A97554 !important;
+}
+
+a.bg-wood:hover, a.bg-wood:focus,
+button.bg-wood:hover,
+button.bg-wood:focus {
+  background-color: #875d43 !important;
+}
+
+/*# sourceMappingURL=style.css.map */

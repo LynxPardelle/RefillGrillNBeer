@@ -1,0 +1,66 @@
+$yellow-RGNB: #E8D274;
+$orange-RGNB: #F79714;
+$second-orange-RGNB: #CBB58A;
+$brown-RGNB: #A97554;
+
+$colors: () !default;
+
+$colors: map-merge(
+  (
+    "yellowRNGB": $yellow-RGNB,
+    "orangeRNGB": $orange-RGNB,
+    "SNDOrangeRNGB": $second-orange-RGNB,
+    "brownRNGB": $brown-RGNB,
+  ),
+  $colors
+);
+
+$honey: $yellow-RGNB !default;
+$fire: $orange-RGNB !default;
+$palehoney: $second-orange-RGNB !default;
+$wood: $brown-RGNB !default;
+
+$theme-colors: () !default;
+
+$theme-colors: map-merge(
+  (
+    "honey": $honey,
+    "fire": $fire,
+    "palehoney": $palehoney,
+    "wood": $wood,
+  ),
+  $theme-colors
+);
+
+@mixin hover-focus() {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin text-emphasis-variant($parent, $color) {
+  #{$parent} {
+    color: $color !important;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  @include text-emphasis-variant(".text-#{$color}", $value);
+}
+
+@mixin bg-variant($parent, $color) {
+  #{$parent} {
+    background-color: $color !important;
+  }
+  a#{$parent},
+  button#{$parent} {
+    @include hover-focus() {
+      background-color: darken($color, 10%) !important;
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  @include bg-variant(".bg-#{$color}", $value);
+}
