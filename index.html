@@ -28,8 +28,16 @@
     <footer >
       <div id="div_footer"></div>
     </footer>
+
+    <iframe id="header_iframe" class="d-none" onload="getHeader()" src="/assets/js/htmls_sources/header.html" frameborder="0"></iframe>
+    <script>
+      function getHeader(){
+        document.getElementById("div_header").innerHTML = document.getElementById("header_iframe").contentWindow.document.getElementById("div_header").innerHTML;
+      };
+
+    </script>
     
-    <script src="./assets/js/header.js"></script>
+    <!-- <script src="./assets/js/header.js"></script> -->
     <script src="./assets/js/section_googlemaps.js"></script>
     <script src="./assets/js/div_menus.js"></script>
     <script src="./assets/js/div_logos.js"></script>
