@@ -7,12 +7,40 @@
     <title>Header</title>
   </head>
   <body id="div_header">
-    <!-- IMPORTANTE: no quites el símbolo porfavor -->
-    %¬%
-
-      <h1>Refill Grill & Beer</h1>
-
-    %¬%
-    <!-- IMPORTANTE: no quites el símbolo porfavor -->
+    <div class="row justify-content-center">
+      <!-- menú offcanvas izquierdo -->
+      <div id="barraIzquierda cols-2">
+        <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu">
+          
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-labelledby="menuLabel">
+          <div class="offcanvas-header"> 
+            <h5 class="offcanvas-title" id="menuLabel">MENÚ</h5>
+            <button type="button" class="btn-close text-reset btn-close-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" id="listaMenu">
+            <div>
+              <ul class="fs-4 fw-bold list-unstyled text-center">
+                <li><a class="dropdown-item" href="#">Promociones</a></li>
+                <li><a class="dropdown-item" href="#">Ubicación</a></li>
+                <li><a class="dropdown-item" href="#">Cortes</a></li>
+                <li><a class="dropdown-item" href="#">Cervezas</a></li>
+                <li><a class="dropdown-item" href="#">Hamburguesas</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <figure id="logoWhats">
+          <input type="image" src="https://picsum.photos/50/50" alt="logowhats">
+        </figure>
+      </div>
+        <!-- Logo -->
+        <div class="cols-10">
+          <figure class="h-25 w-25">
+            <input type="image" src="https://picsum.photos/100/100" alt="logo">
+          </figure>
+        </div>
+    </div>
   </body>
 </html>

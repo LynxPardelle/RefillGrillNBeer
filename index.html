@@ -7,41 +7,9 @@
     <title>Refill Grill & Beer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/style.css">
-
   </head>
-  <body>
-
-    <header>
-      <div id="div_header">
-      </div>
-    </header>
-
-    <main>
-      <section id="div_google_maps">
-      </section>
-      <section id="div_menus">
-      </section>
-      <section id="div_logos">
-      </section>
-    </main>
-
-    <footer >
-      <div id="div_footer"></div>
-    </footer>
-
-    <iframe id="header_iframe" class="d-none" onload="getHeader()" src="/assets/js/htmls_sources/header.html" frameborder="0"></iframe>
-    <script>
-      function getHeader(){
-        document.getElementById("div_header").innerHTML = document.getElementById("header_iframe").contentWindow.document.getElementById("div_header").innerHTML;
-      };
-
-    </script>
-    
-    <!-- <script src="./assets/js/header.js"></script> -->
-    <script src="./assets/js/section_googlemaps.js"></script>
-    <script src="./assets/js/div_menus.js"></script>
-    <script src="./assets/js/div_logos.js"></script>
-    <script src="./assets/js/footer.js"></script>
+  <body onload="getBody()">
+    <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>

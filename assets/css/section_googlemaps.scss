@@ -1,0 +1,15 @@
+#div_google_maps {
+  background: purple;
+  .container-goomap {
+    .container-map {
+      height: 300px;
+      width: 300px;
+      background: powderblue;
+      .info-map {
+        background: gray;
+        height: 100px;
+        width: 100px;
+      }
+    }
+  }
+}

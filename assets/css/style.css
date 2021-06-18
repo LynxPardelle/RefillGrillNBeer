@@ -1,3 +1,88 @@
+#div_header #barraIzquierda {
+  position: center;
+}
+#div_header #barraIzquierda #logoWhats {
+  width: 10%;
+  height: 10%;
+}
+
+#div_google_maps {
+  background: purple;
+}
+#div_google_maps .container-goomap .container-map {
+  height: 300px;
+  width: 300px;
+  background: powderblue;
+}
+#div_google_maps .container-goomap .container-map .info-map {
+  background: gray;
+  height: 100px;
+  width: 100px;
+}
+
+#div_menus * {
+  margin: auto;
+  padding: 0%;
+  box-sizing: content-box;
+  font-family: sans-serif;
+}
+#div_menus .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#div_menus .container figure {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 0px 25px 30px black;
+  cursor: pointer;
+}
+#div_menus .container figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+#div_menus .container figure .letras {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 203, 129, 0.75);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+#div_menus .container figure:hover > .letras {
+  opacity: 1;
+  visibility: visible;
+}
+#div_menus .container figure:hover > .letras h2 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: black;
+  font-size: 35px;
+  font-weight: 220;
+  margin-bottom: 120;
+  transition: all 700ms ease-out;
+}
+#div_menus .container figure .letras p {
+  color: #853907;
+  font-size: 25px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+  margin-top: 35px;
+}
+
 .text-honey {
   color: #E8D274 !important;
 }
@@ -52,6 +137,18 @@ a.bg-wood:hover, a.bg-wood:focus,
 button.bg-wood:hover,
 button.bg-wood:focus {
   background-color: #875d43 !important;
+}
+
+html {
+  overflow-x: hidden;
+}
+html body {
+  background-color: black;
+  background-image: url("../images/charcoal-84670_1920.jpg");
+  background-size: cover;
+  background-position: left top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
