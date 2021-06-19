@@ -1,23 +1,48 @@
-#div_header #barraIzquierda {
-  position: center;
+#div_header {
+  width: 100%;
+  height: 100vh;
 }
-#div_header #barraIzquierda #logoWhats {
-  width: 10%;
-  height: 10%;
+#div_header #logoRefill {
+  z-index: 10;
+}
+#div_header nav {
+  z-index: 5;
+  background-color: white;
+}
+#div_header nav .navbar-toggler {
+  display: block !important;
+}
+#div_header #barraIzquierda {
+  margin: 1 em;
+  z-index: 10;
+  width: 100px;
+  height: 100vh;
+}
+#div_header #barraIzquierda h1 {
+  width: 1.5rem;
+}
+#div_header #carruselPromocion {
+  height: 100vh;
+  overflow: hidden;
 }
 
 #div_google_maps {
   background: purple;
 }
-#div_google_maps .container-goomap .container-map {
-  height: 300px;
-  width: 300px;
-  background: powderblue;
-}
-#div_google_maps .container-goomap .container-map .info-map {
+#div_google_maps .info-map {
+  border-radius: 2%;
+  overflow: hidden;
   background: gray;
-  height: 100px;
-  width: 100px;
+  height: clamp(20rem, 50rem, 100rem);
+  width: clamp(20rem, 50rem, 100rem);
+}
+#div_google_maps .info-map #google_maps_iframe {
+  height: clamp(15rem, 40vh, 150rem);
+  width: clamp(100%, 100%, 100%);
+}
+#div_google_maps .info-map #adress-container {
+  height: 10vh;
+  background: red;
 }
 
 #div_menus * {
@@ -83,6 +108,26 @@
   margin-top: 35px;
 }
 
+#div_logos h2 {
+  font-size: clamp(1.5rem, calc(1rem + 5vw), 3.5rem);
+}
+#div_logos .picAnimations {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition-duration: 1s;
+  width: clamp(90px, 20%, 180px);
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+#div_logos .picAnimations:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  transition-duration: 1s;
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+
 .text-honey {
   color: #E8D274 !important;
 }
@@ -137,6 +182,30 @@ a.bg-wood:hover, a.bg-wood:focus,
 button.bg-wood:hover,
 button.bg-wood:focus {
   background-color: #875d43 !important;
+}
+
+.w-15 {
+  width: 15% !important;
+}
+
+.w-30 {
+  width: 30% !important;
+}
+
+.w-45 {
+  width: 45% !important;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.w-85 {
+  width: 85% !important;
+}
+
+.w-90 {
+  width: 85% !important;
 }
 
 html {
