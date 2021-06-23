@@ -3,23 +3,29 @@
   height: 100vh;
 }
 #div_header #logoRefill {
-  z-index: 10;
+  z-index: 3;
 }
 #div_header nav {
-  z-index: 5;
+  z-index: 2;
   background-color: white;
 }
-#div_header nav .navbar-toggler {
+#div_header nav #logoRefill img {
+  width: 75px;
+}
+#div_header .navbar-toggler {
   display: block !important;
+  box-shadow: 0 0 0 0;
+  z-index: 5;
 }
 #div_header #barraIzquierda {
   margin: 1 em;
-  z-index: 10;
+  z-index: 1;
   width: 100px;
   height: 100vh;
 }
 #div_header #barraIzquierda h1 {
   width: 1.5rem;
+  font-size: calc(1.5rem + 1vh);
 }
 #div_header #carruselPromocion {
   height: 100vh;
@@ -110,12 +116,13 @@
 
 #div_logos h2 {
   font-size: clamp(1.5rem, calc(1rem + 5vw), 3.5rem);
+  text-shadow: 2px 2px 2px black;
 }
 #div_logos .picAnimations {
   -webkit-transform: scale(1);
   transform: scale(1);
   transition-duration: 1s;
-  width: clamp(90px, 20%, 180px);
+  width: clamp(120px, 25%, 180px);
   aspect-ratio: 1/1;
   overflow: hidden;
 }

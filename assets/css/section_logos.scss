@@ -1,13 +1,14 @@
 #div_logos {
   h2 {
     font-size: clamp(1.5rem, calc(1rem + 5vw), 3.5rem);
+    text-shadow: 2px 2px 2px black;
   }
 
   .picAnimations {
     -webkit-transform: scale(1);
     transform: scale(1);
     transition-duration: 1s;
-    width: clamp(90px, 20%, 180px);
+    width: clamp(120px, 25%, 180px);
     aspect-ratio: 1/1;
     &:hover {
       -webkit-transform: scale(1.3);
