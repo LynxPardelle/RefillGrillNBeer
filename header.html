@@ -10,7 +10,7 @@
   <body id="div_header">
   
 <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed top-0 w-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-true-dark position-fixed top-0 w-100">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu">
           <span class="navbar-toggler-icon"></span>
@@ -24,14 +24,14 @@
     </nav>
     <!-- navbar end -->
     <!-- menú offcanvas izquierdo -->
-    <div id="barraIzquierda" class="position-absolute d-flex flex-column justify-content-between top-0 start-0 pt-2 pb-2 align-items-center border-end border-bottom border-3 border-light bg-dark text-light">
+    <div id="barraIzquierda" class="position-absolute d-flex flex-column justify-content-between top-0 start-0 pt-4 pb-4 align-items-center border-end border-bottom border-3 border-fire bg-true-dark text-light">
       
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu">
         <span class="navbar-toggler-icon"></span>
       </button>
       
       <!-- Título -->          
-      <h1 class="text-break text-warning">REFILL 
+      <h1 class="text-break text-honey animate__animated animate__bounceIn">REFILL 
         <br />
         <br />
         GRILL
@@ -48,27 +48,20 @@
         </svg>
       </a>
       <!-- Offcanvas Start-->
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-labelledby="menuLabel">
+      <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="menu" aria-labelledby="menuLabel">
         <div class="offcanvas-header"> 
           <h5 class="offcanvas-title" id="menuLabel">MENÚ</h5>
           <button type="button" class="btn-close text-reset btn-close-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body" id="listaMenu">
-          <div>
-            <ul class="fs-4 fw-bold list-unstyled text-center">
-              <br/>
-              <li><a class="dropdown-item animate__animated animate__bounceIn" href="#">Promociones</a></li>
-              <br/>
-              <li><a class="dropdown-item animate__animated animate__bounceIn" href="#">Ubicación</a></li>
-              <br/>
-              <li><a class="dropdown-item animate__animated animate__bounceIn" href="#">Cortes</a></li>
-              <br/>
-              <li><a class="dropdown-item animate__animated animate__bounceIn" href="#">Cervezas</a></li>
-              <br/>
-              <li><a class="dropdown-item animate__animated animate__bounceIn" href="#">Hamburguesas</a></li>
+        <div class="offcanvas-body p-0"  id="listaMenu">
+            <ul class="fs-4 fw-bold list-unstyled text-center d-flex flex-column justify-content-evenly w-100">
+              <li><a class="dropdown-item animate__animated animate__bounceIn text-light bg-true-dark p-4" href="#">Promociones</a></li>
+              <li><a class="dropdown-item animate__animated animate__bounceIn text-light bg-true-dark p-4" href="#">Ubicación</a></li>
+              <li><a class="dropdown-item animate__animated animate__bounceIn text-light bg-true-dark p-4" href="#">Cortes</a></li>
+              <li><a class="dropdown-item animate__animated animate__bounceIn text-light bg-true-dark p-4" href="#">Cervezas</a></li>
+              <li><a class="dropdown-item animate__animated animate__bounceIn text-light bg-true-dark p-4" href="#">Hamburguesas</a></li>
               
             </ul>
-          </div>
         </div>
       </div>
       <!-- Offcanvas End-->
@@ -85,14 +78,13 @@
         </div>
         <div class="carousel-inner ">
           <div class="carousel-item active">
-            <img src="https://picsum.photos/1500/1251" class="d-block w-100  vh-25" alt="...">
-
+            <img src="./assets/images/Fotos_RG/106687414_2113596805450686_4375080348902482572_n.jpg" class="d-block w-100  vh-25" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="https://picsum.photos/1500/1252" class="d-block w-100  vh-25" alt="...">
+            <img src="./assets/images/Fotos_RG/51440592_1604582569685448_1888478810605617152_n.jpg" class="d-block w-100  vh-25" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="https://picsum.photos/1500/1253" class="d-block w-100 vh-25" alt="...">
+            <img src="./assets/images/Fotos_RG/54523635_1642983219178716_8129699352693178368_n.jpg" class="d-block w-100 vh-25" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carruselPromocion" data-bs-slide="prev">

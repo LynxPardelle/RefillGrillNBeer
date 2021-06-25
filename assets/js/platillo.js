@@ -21,35 +21,26 @@ var platillos = [
   },
 ];
 
-var iframe = document.getElementById("platillo_iframe").contentWindow.document;
-
-setTimeout(() => {
-  getPlatillo();
-}, 100);
-
 function getPlatillo() {
   let i = 0;
   for (let platillo of platillos) {
+    let iframe = document.getElementById("platillo_iframe").contentWindow.document;
     if (iframe) {
-      if (iframe.getElementById("platillo_image")) {
-        console.log("platillos loading...");
-        iframe.getElementById("platillo_image").innerHTML = `
-        <img src="${platillo.imagen}" alt="${platillo.imagen}">
-        <div class="letras">
-          <h2 id="platillo_titulo">
-          </h2>
-          <p id="platillo_descripción">
-          </p>
-        </div>
-        `;
-        if (iframe.getElementById("platillo_titulo")) {
-          iframe.getElementById("platillo_titulo").innerHTML = platillo.titulo;
-        }
-        if (iframe.getElementById("platillo_descripción")) {
-          iframe.getElementById("platillo_descripción").innerHTML = platillo.descripcion;
-        }
-        if (iframe.getElementById("div_platillo")) {
+      if (iframe.getElementById("div_platillo")) {
+        if (iframe.getElementById("platillo_image")) {
+          var oldIframe = iframe.getElementById("platillo_image").innerHTML;
+          iframe.getElementById("platillo_image").innerHTML =
+            `
+            <img src="${platillo.imagen}" alt="${platillo.imagen}">
+            ` + oldIframe;
+          if (iframe.getElementById("platillo_titulo")) {
+            iframe.getElementById("platillo_titulo").innerHTML = platillo.titulo;
+          }
+          if (iframe.getElementById("platillo_descripción")) {
+            iframe.getElementById("platillo_descripción").innerHTML = platillo.descripcion;
+          }
           document.getElementById("platillos").innerHTML += iframe.getElementById("div_platillo").innerHTML;
+          iframe.getElementById("platillo_image").innerHTML = oldIframe;
         }
       }
     }

@@ -17,11 +17,12 @@ function getBody() {
     <footer onload="getHeader()" id="div_footer">
     </footer>
                 
-    <iframe id="header_iframe" class="d-none" onload="getHeader()" src="/assets/js/htmls_sources/header.html" frameborder="0"></iframe>
-    <iframe id="section_googlemaps_iframe" class="d-none" onload="getSGoogleMaps()" src="/assets/js/htmls_sources/div_google_maps.html" frameborder="0"></iframe>
-    <iframe id="section_menus_iframe" class="d-none" onload="getSMenus()" src="/assets/js/htmls_sources/div_menus.html" frameborder="0"></iframe>
-    <iframe id="section_logos_iframe" class="d-none" onload="getSLogos()" src="/assets/js/htmls_sources/div_logos.html" frameborder="0"></iframe>
-    <iframe id="footer_iframe" class="d-none" onload="getFooter()" src="/assets/js/htmls_sources/div_footer.html" frameborder="0"></iframe>
+    <iframe id="header_iframe" class="d-none" onload="getHeader()" src="/header.html" frameborder="0"></iframe>
+    <iframe id="section_googlemaps_iframe" class="d-none" onload="getSGoogleMaps()" src="/div_google_maps.html" frameborder="0"></iframe>
+    <iframe id="section_menus_iframe" class="d-none" onload="getSMenus()" onchange="getSMenus()" src="/div_menus.html" frameborder="0"></iframe>
+    <iframe id="section_logos_iframe" class="d-none" onload="getSLogos()" src="/div_logos.html" frameborder="0"></iframe>
+    <iframe id="footer_iframe" class="d-none" onload="getFooter()" src="/div_footer.html" frameborder="0"></iframe>
+    <iframe id="platillo_iframe" class="d-none" src="./platillo.html" frameborder="0"></iframe>
     ` + document.body.innerHTML;
 
   /*
@@ -68,6 +69,9 @@ function getSGoogleMaps() {
 }
 function getSMenus() {
   document.getElementById("div_menus").innerHTML = document.getElementById("section_menus_iframe").contentWindow.document.getElementById("div_menus").innerHTML;
+  if (document.getElementById("platillo_iframe").contentWindow.document) {
+    getPlatillo();
+  }
 }
 function getSLogos() {
   document.getElementById("div_logos").innerHTML = document.getElementById("section_logos_iframe").contentWindow.document.getElementById("div_logos").innerHTML;

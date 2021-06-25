@@ -5,7 +5,7 @@
     z-index: 3;
   }
   nav {
-    z-index: 2;
+    z-index: 4;
     background-color: rgba($color: #ffffff00, $alpha: 1);
 
     #logoRefill {
@@ -18,12 +18,12 @@
   .navbar-toggler {
     display: block !important;
     box-shadow: 0 0 0 0;
-    z-index: 5;
+    z-index: 6;
   }
 
   #barraIzquierda {
     margin: 1 em;
-    z-index: 1;
+    z-index: 3;
     width: 100px;
     height: 100vh;
 
@@ -31,10 +31,36 @@
       width: 1.5rem;
       font-size: calc(1.5rem + 1vh);
     }
+
+    .offcanvas {
+      background: linear-gradient(-244.86464315926816deg, rgba(5, 6, 7, 1) -4.024739583333329%, rgba(5, 6, 7, 1) 46.05219184027777%, rgba(25, 26, 27, 1) 96.54817708333333%, rgba(26, 27, 28, 1) 96.54817708333333%);
+      .offcanvas-body {
+        ul {
+          height: 93.5vh;
+        }
+      }
+    }
   }
 
   #carruselPromocion {
     height: 100vh;
     overflow: hidden;
+    .carousel-inner {
+      .carousel-item {
+        img {
+          height: 100vh;
+          object-fit: cover;
+          object-position: 50% 50%;
+        }
+      }
+    }
+  }
+
+  .border-fire {
+    border-bottom-color: #f79714 !important;
+    border-top-color: #f79714 !important;
+    border-left-color: #f79714 !important;
+    border-right-color: #f79714 !important;
+    border-color: #f79714 !important;
   }
 }
