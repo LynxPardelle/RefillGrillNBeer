@@ -1,0 +1,22 @@
+#div_google_maps {
+  background: purple;
+}
+
+#div_google_maps .info-map {
+  border-radius: 2%;
+  overflow: hidden;
+  background: gray;
+  height: clamp(20rem, 50rem, 100rem);
+  width: clamp(20rem, 50rem, 100rem);
+}
+
+#div_google_maps .info-map #google_maps_iframe {
+  height: clamp(15rem, 40vh, 150rem);
+  width: clamp(100%, 100%, 100%);
+}
+
+#div_google_maps .info-map #adress-container {
+  height: 10vh;
+  background: red;
+}
+/*# sourceMappingURL=section_googlemaps.css.map */

@@ -1,0 +1,70 @@
+.text-honey {
+  color: #e8d274 !important;
+}
+
+.text-fire {
+  color: #f79714 !important;
+}
+
+.text-palehoney {
+  color: #cbb58a !important;
+}
+
+.text-wood {
+  color: #a97554 !important;
+}
+
+.text-true-dark {
+  color: #050607 !important;
+}
+
+.bg-honey {
+  background-color: #e8d274 !important;
+}
+
+a.bg-honey:hover, a.bg-honey:focus,
+button.bg-honey:hover,
+button.bg-honey:focus {
+  background-color: #e1c448 !important;
+}
+
+.bg-fire {
+  background-color: #f79714 !important;
+}
+
+a.bg-fire:hover, a.bg-fire:focus,
+button.bg-fire:hover,
+button.bg-fire:focus {
+  background-color: #d17c07 !important;
+}
+
+.bg-palehoney {
+  background-color: #cbb58a !important;
+}
+
+a.bg-palehoney:hover, a.bg-palehoney:focus,
+button.bg-palehoney:hover,
+button.bg-palehoney:focus {
+  background-color: #bb9f67 !important;
+}
+
+.bg-wood {
+  background-color: #a97554 !important;
+}
+
+a.bg-wood:hover, a.bg-wood:focus,
+button.bg-wood:hover,
+button.bg-wood:focus {
+  background-color: #875d43 !important;
+}
+
+.bg-true-dark {
+  background-color: #050607 !important;
+}
+
+a.bg-true-dark:hover, a.bg-true-dark:focus,
+button.bg-true-dark:hover,
+button.bg-true-dark:focus {
+  background-color: black !important;
+}
+/*# sourceMappingURL=colors.css.map */

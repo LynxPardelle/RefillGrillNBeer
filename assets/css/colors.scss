@@ -2,6 +2,7 @@ $yellow-RGNB: #e8d274;
 $orange-RGNB: #f79714;
 $second-orange-RGNB: #cbb58a;
 $brown-RGNB: #a97554;
+$dark-brown-RGNB: #754120;
 $super-dark: #050607;
 //$super-dark-ligr-diagonal-st-eb: linear-gradient(-244.86464315926816deg, rgba(5, 6, 7, 1) -4.024739583333329%, rgba(9, 10, 11, 1) 96.54817708333333%, rgba(10, 11, 12, 1) 96.54817708333333%);
 
@@ -13,6 +14,7 @@ $colors: map-merge(
     "orangeRNGB": $orange-RGNB,
     "SNDOrangeRNGB": $second-orange-RGNB,
     "brownRNGB": $brown-RGNB,
+    "dark-brownRNGB": $dark-brown-RGNB,
     "super-dark": $super-dark,
     //"super-dark-ligr-diagonal-st-eb": $super-dark-ligr-diagonal-st-eb,
   ),
@@ -23,6 +25,7 @@ $honey: $yellow-RGNB !default;
 $fire: $orange-RGNB !default;
 $palehoney: $second-orange-RGNB !default;
 $wood: $brown-RGNB !default;
+$dark-wood: $dark-brown-RGNB !default;
 $true-dark: $super-dark !default;
 //$true-dark-ligr-diagonal-st-eb: $super-dark-ligr-diagonal-st-eb !default;
 
@@ -34,6 +37,7 @@ $theme-colors: map-merge(
     "fire": $fire,
     "palehoney": $palehoney,
     "wood": $wood,
+    "dark-wood": $dark-wood,
     "true-dark": $true-dark,
     //"true-dark-ligr-diagonal-st-eb": $true-dark-ligr-diagonal-st-eb,
   ),
