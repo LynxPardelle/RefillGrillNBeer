@@ -49,15 +49,9 @@
   border-color: #f79714 !important;
 }
 
-#div_google_maps {
-  background: purple;
-}
 #div_google_maps .info-map {
   border-radius: 2%;
   overflow: hidden;
-  background: gray;
-  height: clamp(20rem, 50rem, 100rem);
-  width: clamp(20rem, 50rem, 100rem);
 }
 #div_google_maps .info-map #google_maps_iframe {
   height: clamp(15rem, 40vh, 150rem);
@@ -65,55 +59,80 @@
 }
 #div_google_maps .info-map #adress-container {
   height: 10vh;
-  background: red;
+  background: white;
+}
+#div_google_maps .info-map #adress-container .adress-place {
+  width: 60vh;
+  height: 5vh;
 }
 
-#div_menus #platillos_cortes, #div_menus #platillos_cervezas, #div_menus #platillos_hamburguesas {
+#div_menus #platillos_cortes,
+#div_menus #platillos_cervezas,
+#div_menus #platillos_hamburguesas {
   min-height: 50vh;
 }
-#div_menus #platillos_cortes figure, #div_menus #platillos_cervezas figure, #div_menus #platillos_hamburguesas figure {
+#div_menus #platillos_cortes figure,
+#div_menus #platillos_cervezas figure,
+#div_menus #platillos_hamburguesas figure {
   min-width: 250px;
   width: 40%;
   height: 35vh;
   margin: 30px auto;
   border-radius: 25px;
   box-shadow: 0px 25px 30px black;
+  cursor: pointer;
 }
-#div_menus #platillos_cortes figure img, #div_menus #platillos_cervezas figure img, #div_menus #platillos_hamburguesas figure img {
+#div_menus #platillos_cortes figure img,
+#div_menus #platillos_cervezas figure img,
+#div_menus #platillos_hamburguesas figure img {
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
   transition: all 500ms ease-out;
 }
-#div_menus #platillos_cortes figure .letras, #div_menus #platillos_cervezas figure .letras, #div_menus #platillos_hamburguesas figure .letras {
+#div_menus #platillos_cortes figure .letras,
+#div_menus #platillos_cervezas figure .letras,
+#div_menus #platillos_hamburguesas figure .letras {
   height: 100%;
   transition: all 500ms ease-out;
   opacity: 0;
   visibility: hidden;
 }
-#div_menus #platillos_cortes figure .letras p, #div_menus #platillos_cervezas figure .letras p, #div_menus #platillos_hamburguesas figure .letras p {
+#div_menus #platillos_cortes figure .letras p,
+#div_menus #platillos_cervezas figure .letras p,
+#div_menus #platillos_hamburguesas figure .letras p {
   font-size: 1rem;
 }
-#div_menus #platillos_cortes figure:hover .letras, #div_menus #platillos_cervezas figure:hover .letras, #div_menus #platillos_hamburguesas figure:hover .letras {
-  opacity: 0.83;
+#div_menus #platillos_cortes figure:hover .letras,
+#div_menus #platillos_cervezas figure:hover .letras,
+#div_menus #platillos_hamburguesas figure:hover .letras {
+  opacity: 0.88;
   visibility: visible;
 }
-#div_menus #platillos_cortes figure:hover .letras h2, #div_menus #platillos_cervezas figure:hover .letras h2, #div_menus #platillos_hamburguesas figure:hover .letras h2 {
+#div_menus #platillos_cortes figure:hover .letras h2,
+#div_menus #platillos_cervezas figure:hover .letras h2,
+#div_menus #platillos_hamburguesas figure:hover .letras h2 {
   /*margin-top: 50px;
-    margin-bottom: 15px;
-    margin-left: 40px;
-    margin-right: 40px; */
+  margin-bottom: 15px;
+  margin-left: 40px;
+  margin-right: 40px; */
   transition: all 700ms ease-out;
 }
 
 @media screen and (min-width: 576px) {
-  #div_menus #platillos_cortes, #div_menus #platillos_cervezas, #div_menus #platillos_hamburguesas {
+  #div_menus #platillos_cortes,
+#div_menus #platillos_cervezas,
+#div_menus #platillos_hamburguesas {
     min-height: 100vh;
   }
-  #div_menus #platillos_cortes figure, #div_menus #platillos_cervezas figure, #div_menus #platillos_hamburguesas figure {
+  #div_menus #platillos_cortes figure,
+#div_menus #platillos_cervezas figure,
+#div_menus #platillos_hamburguesas figure {
     margin: 0 auto;
   }
-  #div_menus #platillos_cortes figure .letras p, #div_menus #platillos_cervezas figure .letras p, #div_menus #platillos_hamburguesas figure .letras p {
+  #div_menus #platillos_cortes figure .letras p,
+#div_menus #platillos_cervezas figure .letras p,
+#div_menus #platillos_hamburguesas figure .letras p {
     font-size: 1.5rem;
   }
 }
@@ -130,6 +149,15 @@
   overflow: hidden;
 }
 #div_logos .picAnimations:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  transition-duration: 1s;
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+
+#div_footer .wowLinks:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
   transition-duration: 1s;
@@ -256,6 +284,9 @@ html body {
   background-position: left top;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+html body h2 {
+  font-size: clamp(1.5rem, calc(1rem + 5vw), 3.5rem);
 }
 
 /*# sourceMappingURL=style.css.map */

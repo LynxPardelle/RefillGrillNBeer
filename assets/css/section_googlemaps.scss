@@ -1,18 +1,18 @@
 #div_google_maps {
-  background: purple;
   .info-map {
     border-radius: 2%;
     overflow: hidden;
-    background: gray;
-    height: clamp(20rem, 50rem, 100rem);
-    width: clamp(20rem, 50rem, 100rem);
     #google_maps_iframe {
       height: clamp(15rem, 40vh, 150rem);
       width: clamp(100%, 100%, 100%);
     }
     #adress-container {
       height: 10vh;
-      background: red;
+      background: white;
+      .adress-place {
+        width: 60vh;
+        height: 5vh;
+      }
     }
   }
 }

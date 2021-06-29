@@ -33,5 +33,9 @@ html {
     background-position: left top;
     background-attachment: fixed;
     background-repeat: no-repeat;
+
+    h2 {
+      font-size: clamp(1.5rem, calc(1rem + 5vw), 3.5rem);
+    }
   }
 }

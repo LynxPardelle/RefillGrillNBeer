@@ -1,5 +1,4 @@
 'use strict'
-console.log('events work');
 
 function onEventInsRmvAnimation(trigger) {
   // console.log('animating something...');
@@ -21,4 +20,12 @@ function onEventInsRmvAnimation(trigger) {
       }
     }
   }
+};
+
+function scrolltoId(id) {
+  console.log(id);
+  //document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  console.log(document.getElementById(id).offsetTop);
+  console.log(document.body);
+  window.scrollTo(0, document.getElementById(id).offsetTop - 85);
 }
