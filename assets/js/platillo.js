@@ -35,7 +35,7 @@ var platillos = [
     imagen: "./assets/images/Fotos_RG/CORVE.jpg",
     titulo: "Corte al carbón",
     descripcion:
-      "Corte proveniente de la parte media del lomo, acompañado de una ración de papas, ensalada y salsa agria",
+      "Proveniente de la parte media del lomo, acompañado de una ración de papas, ensalada y salsa agria",
     type: "Corte",
   },
   {

@@ -14,6 +14,10 @@
   color: #a97554 !important;
 }
 
+.text-dark-wood {
+  color: #754120 !important;
+}
+
 .text-true-dark {
   color: #050607 !important;
 }
@@ -56,6 +60,16 @@ a.bg-wood:hover, a.bg-wood:focus,
 button.bg-wood:hover,
 button.bg-wood:focus {
   background-color: #875d43 !important;
+}
+
+.bg-dark-wood {
+  background-color: #754120 !important;
+}
+
+a.bg-dark-wood:hover, a.bg-dark-wood:focus,
+button.bg-dark-wood:hover,
+button.bg-dark-wood:focus {
+  background-color: #4d2b15 !important;
 }
 
 .bg-true-dark {
@@ -103,5 +117,9 @@ html body {
   background-position: left top;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+
+html body h2 {
+  font-size: clamp(1.5rem, calc(1rem + 5vw), 3.5rem);
 }
 /*# sourceMappingURL=style-global.css.map */

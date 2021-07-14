@@ -2,16 +2,18 @@
   .info-map {
     border-radius: 2%;
     overflow: hidden;
+    width: clamp(70%, 600px, 100%);
     #google_maps_iframe {
       height: clamp(15rem, 40vh, 150rem);
       width: clamp(100%, 100%, 100%);
     }
     #adress-container {
-      height: 10vh;
+      width: 100%;
+      //height: 10vh;
       background: white;
       .adress-place {
-        width: 60vh;
-        height: 5vh;
+        width: 60vw;
+        //height: 5vh;
       }
     }
   }

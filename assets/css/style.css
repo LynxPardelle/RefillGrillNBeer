@@ -52,18 +52,18 @@
 #div_google_maps .info-map {
   border-radius: 2%;
   overflow: hidden;
+  width: clamp(70%, 600px, 100%);
 }
 #div_google_maps .info-map #google_maps_iframe {
   height: clamp(15rem, 40vh, 150rem);
   width: clamp(100%, 100%, 100%);
 }
 #div_google_maps .info-map #adress-container {
-  height: 10vh;
+  width: 100%;
   background: white;
 }
 #div_google_maps .info-map #adress-container .adress-place {
-  width: 60vh;
-  height: 5vh;
+  width: 60vw;
 }
 
 #div_menus #platillos_cortes,
