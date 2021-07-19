@@ -26,10 +26,10 @@
   width: 1rem;
   font-size: 1.5rem;
 }
-#div_header #barraIzquierda .offcanvas {
+.offcanvas {
   background: linear-gradient(-244.8646431593deg, #050607 -4.0247395833%, #050607 46.0521918403%, #191a1b 96.5481770833%, #1a1b1c 96.5481770833%);
 }
-#div_header #barraIzquierda .offcanvas .offcanvas-body ul {
+.offcanvas .offcanvas-body ul {
   height: 80vh;
 }
 #div_header #carruselPromocion {
@@ -63,7 +63,10 @@
   background: white;
 }
 #div_google_maps .info-map #adress-container .adress-place {
-  width: 60vw;
+  width: 60%;
+}
+#div_google_maps .info-map #adress-container a {
+  width: 40%;
 }
 
 #div_menus #platillos_cortes,
@@ -129,11 +132,6 @@
 #div_menus #platillos_cervezas figure,
 #div_menus #platillos_hamburguesas figure {
     margin: 0 auto;
-  }
-  #div_menus #platillos_cortes figure .letras p,
-#div_menus #platillos_cervezas figure .letras p,
-#div_menus #platillos_hamburguesas figure .letras p {
-    font-size: 1.5rem;
   }
 }
 #div_logos h2 {

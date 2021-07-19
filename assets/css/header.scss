@@ -31,32 +31,19 @@
       font-size: 1.5rem;
     }
 
-    .offcanvas {
-      background: linear-gradient(
-        -244.86464315926816deg,
-        rgba(5, 6, 7, 1) -4.024739583333329%,
-        rgba(5, 6, 7, 1) 46.05219184027777%,
-        rgba(25, 26, 27, 1) 96.54817708333333%,
-        rgba(26, 27, 28, 1) 96.54817708333333%
-      );
-      .offcanvas-body {
-        ul {
-          height: 80vh;
-          li {
-            a {
-              // animation-play-state: paused;
-            }
-          }
-        }
-        &:hover {
-          ul {
-            li {
-              a {
-                // animation-play-state: running;
-              }
-            }
-          }
-        }
+  }
+  
+  .offcanvas {
+    background: linear-gradient(
+      -244.86464315926816deg,
+      rgba(5, 6, 7, 1) -4.024739583333329%,
+      rgba(5, 6, 7, 1) 46.05219184027777%,
+      rgba(25, 26, 27, 1) 96.54817708333333%,
+      rgba(26, 27, 28, 1) 96.54817708333333%
+    );
+    .offcanvas-body {
+      ul {
+        height: 80vh;
       }
     }
   }
